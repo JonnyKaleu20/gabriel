@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#chat-box {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#chat-form input {
+    padding: 10px;
+    flex: 1;
+}
+
+#chat-form button {
+    padding: 10px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-voltar:hover {
+    background-color: #555;
+}
