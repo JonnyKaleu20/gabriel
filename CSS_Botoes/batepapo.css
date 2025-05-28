@@ -1,43 +1,104 @@
+/* Corpo da página com fundo neutro */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+/* Botão de música */
+#playMusicBtn {
+  margin-bottom: 15px;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1db954; /* verde tipo Spotify */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#playMusicBtn:hover {
+  background-color: #1aa34a;
+  transform: scale(1.05);
+}
+
+
+/* Container do bate-papo */
 #chat-box {
-    border: 1px solid #ccc;
-    background-color: white;
-    padding: 10px;
-    height: 300px;
-    overflow-y: scroll;
-    margin-bottom: 20px;
+  width: 400px;
+  height: 500px;
+  background-image: url('/image/gabriel.png'); /* coloque o caminho da imagem aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.7); /* escurece a imagem para facilitar leitura */
+  background-blend-mode: darken;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  padding: 15px;
+  overflow-y: auto;
+  color: #f0f0f0;
+  border: 2px solid #222;
+  box-sizing: border-box;
 }
 
+/* Formulário do chat */
 #chat-form {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+  margin-top: 15px;
+  width: 400px;
+  display: flex;
+  gap: 10px;
 }
 
-#chat-form input {
-    padding: 10px;
-    flex: 1;
+/* Inputs */
+#chat-form input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
 }
 
+/* Botão enviar */
 #chat-form button {
-    padding: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+#chat-form button:hover {
+  background-color: #155ab6;
+}
+
+/* Link voltar */
 .btn-voltar {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .btn-voltar:hover {
-    background-color: #555;
+  color: #155ab6;
 }

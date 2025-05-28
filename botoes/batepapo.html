@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>Bate Papo</h1>
+
+    <!-- Botão para tocar música -->
+    <button id="playMusicBtn">Tocar Música</button>
+    <audio id="backgroundMusic" src="/music/CANTA LA [F1s-GALwi-w].mp3" preload="auto"></audio>
+
     <div id="chat-box"></div>
 
     <form id="chat-form">
@@ -18,5 +23,20 @@
     <a href="../home.html" class="btn-voltar">Voltar</a>
 
     <script src="../js/batepapo.js"></script>
+
+    <script>
+        const playBtn = document.getElementById('playMusicBtn');
+        const audio = document.getElementById('backgroundMusic');
+
+        playBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = 'Pausar Música';
+            } else {
+                audio.pause();
+                playBtn.textContent = 'Tocar Música';
+            }
+        });
+    </script>
 </body>
 </html>
